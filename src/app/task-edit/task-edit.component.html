@@ -1,0 +1,17 @@
+<h2>Editar Tarea</h2>
+<form [formGroup]="taskForm" (submit)="onSubmit()">
+  <div>
+    <label for="description">ID. {{ taskId }}</label>
+  </div>
+  <div>
+    <label for="title">Descripción</label>
+    <input style="margin-left: 10px;" type="text" id="title" formControlName="description" [placeholder]="taskDesc">
+  </div>
+  <button style="margin-top: 10px;" type="submit">Guardar Cambios</button>
+</form>
+<h2>Lista de Tareas</h2>
+<ul>
+  <li *ngFor="let task of tasks">
+    {{ task.id }}. {{ task.description }}
+  </li>
+</ul>

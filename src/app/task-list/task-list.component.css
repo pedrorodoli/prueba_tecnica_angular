@@ -1,22 +1,7 @@
-h2 {
-    font-family: sans-serif;
-    font-size: 1.5em;
-    text-transform: uppercase;
-}
-
-strong {
-    font-weight: 700;
-    background-color: yellow;
-}
-
-p {
-    font-family: sans-serif;
-}
-
-a,a:hover {
+button {
     text-decoration: none; /* Quita la subrayado por defecto */
-    color: white; /* Cambia el color de texto a azul (puedes ajustarlo) */
-    border: 1px solid white; /* Agrega un borde de 1px sólido */
+    color: #007bff; /* Cambia el color de texto a azul (puedes ajustarlo) */
+    border: 1px solid #007bff; /* Agrega un borde de 1px sólido */
     padding: 5px 10px; /* Añade espacio de relleno alrededor del texto */
     display: inline-block; /* Hace que los enlaces se muestren en línea con otros elementos */
     border-radius: 5px; /* Agrega bordes redondeados */
@@ -24,7 +9,7 @@ a,a:hover {
   }
   
   /* Cambio de estilo al pasar el cursor sobre los enlaces */
-  a:hover {
-    background-color: #404040; /* Cambia el fondo a azul al pasar el cursor */
+  button:hover {
+    background-color: #007bff; /* Cambia el fondo a azul al pasar el cursor */
     color: white; /* Cambia el color del texto a blanco */
   }

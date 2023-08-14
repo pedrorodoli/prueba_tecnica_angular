@@ -1,0 +1,15 @@
+<h2>Nueva Tarea</h2>
+<form [formGroup]="taskForm" (submit)="nuevaTarea()">
+  <div>
+    <label for="description">Descripción</label>
+    <input style="margin-left: 10px;" type="text" id="description" formControlName="description">
+  </div>
+  <button style="margin-top: 10px;" type="button" (click)="nuevaTarea()">Agregar</button>
+</form>
+<h2>Lista de Tareas</h2>
+<ul>
+  <li *ngFor="let task of tasks">
+    {{ task.id }}. {{ task.description }}
+    <button (click)="borrarTarea(task.id)">Borrar</button>
+  </li>
+</ul>
